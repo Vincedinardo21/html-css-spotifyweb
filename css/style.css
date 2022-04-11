@@ -7,6 +7,7 @@
 
 body {
     font-family: ‘Montserrat’, sans-serif;
+    color: gray;
 }
 
 a {
@@ -30,8 +31,6 @@ h4 {
     clear: both;
 }
 
-
-
 .colsx, .coldx {
     float: left;
     height: calc(100vh - 70px);
@@ -45,7 +44,7 @@ h4 {
     width: 200px;
     padding: 10px;
     /* Debug */
-    background-color: aqua;
+    background-color: black;
 }
 
 /* COLONNA DESTRA */
@@ -53,7 +52,17 @@ h4 {
     overflow-y: auto;
     width: calc(100% - 200px);
     /* Debug */
-    background-color: green;
+    background-color: rgb(20, 25, 34);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .upgrade {
@@ -71,6 +80,11 @@ h4 {
     padding: 10px;
     border: 1px solid gray;
     border-radius: 25px;
+}
+
+.container {
+    padding: 20px;
+    margin-top: 80px;
 }
 
 .container-album {
@@ -103,6 +117,6 @@ h4 {
 /* Footer */
 footer {
     height: 70px;
-    background-color: yellow;
+    background-color: rgb(40, 40, 40);
 }
 
