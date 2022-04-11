@@ -9,6 +9,19 @@ body {
     font-family: ‘Montserrat’, sans-serif;
 }
 
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h4 {
+    color: white;
+}
+
 /* Header */
 /* header {
     width: 100%;
@@ -31,8 +44,12 @@ body {
 
 .colsx {
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 200px;
     height: calc(100vh - 100px);
+    padding: 10px;
     /* Debug */
     background-color: aqua;
 }
