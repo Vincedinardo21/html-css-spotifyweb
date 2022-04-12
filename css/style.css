@@ -153,10 +153,11 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 70px;
+    padding: 10px;
     background-color: rgb(40, 40, 40);
 }
 
-.sinistra, .centrale{
+.sinistra, .centrale, .destra{
     display: flex;
     align-items: center;
 }
@@ -165,18 +166,39 @@ footer {
     justify-content: flex-start;
 }
 
-.centrale{
+.destra{
     width: 15%;
     /* background-color: aqua; */
+    
+}
+
+.centrale {
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30%;
+}
+
+.destra {
     justify-content: space-between;
 }
 
-/* .centrale hr{
-    color: red;
-    width: 90px;
+.centrale li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.barra-riprod {
+    width: 100%;
     height: 5px;
     border-radius: 10px;
-} */
+    background-color: gray;
+}
+
+#play {
+    font-size: 30px;
+}
 
 .barra {
     width: 90px;
@@ -185,11 +207,19 @@ footer {
     background-color: gray;
 }
 
-.barra div{
-    width: 30px;
+.barra div, .barra-riprod div{
+    /* width: 30px; */
     height: 100%;
     border-radius: 10px;
     background-color: white;
+}
+
+.barra div {
+    width: 30px;
+}
+
+.barra-riprod div {
+    width: 90px;
 }
 
 footer img {
