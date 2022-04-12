@@ -171,11 +171,25 @@ footer {
     justify-content: space-between;
 }
 
-.centrale hr{
+/* .centrale hr{
     color: red;
     width: 90px;
     height: 5px;
     border-radius: 10px;
+} */
+
+.barra {
+    width: 90px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.barra div{
+    width: 30px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
 }
 
 footer img {
