@@ -47,22 +47,41 @@ h4 {
     background-color: black;
 }
 
+.row li {
+    margin-top: 14px;
+}
+
+.fa-square-plus {
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+.crea-playlist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 /* COLONNA DESTRA */
 .coldx{
     overflow-y: auto;
     width: calc(100% - 200px);
-    /* Debug */
     background-color: rgb(20, 25, 34);
 }
 
 nav {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 nav li {
     display: inline-block;
     margin-right: 20px;
+}
+
+nav h4 {
+    color: gray;
 }
 
 .upgrade {
@@ -77,6 +96,7 @@ nav li {
 }
 
 .upgrade h4 {
+    margin-right: 20px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 25px;
@@ -84,7 +104,7 @@ nav li {
 
 .container {
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 .container-album {
