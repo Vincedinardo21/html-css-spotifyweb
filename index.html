@@ -27,7 +27,7 @@
                 <div class="contenuto-up">
                     <img src="img/logo.svg" alt="">
                     <ul>
-                        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li class="home"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
                         <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a></li>
                         <li><a href="#"><i class="fa-solid fa-music"></i> La tua libreria</a></li>
                         <!-- <li><br></li> -->
@@ -54,8 +54,14 @@
                 </div>
 
                 <div class="contenuto-down">
-                    <div>Installa app</div>
-                    <div>John Doe</div>
+                    <div>
+                        <img src="img/download.svg" alt="">
+                        Installa app
+                    </div>
+                    <hr>
+                    <div>                      
+                        <h4><i class="fa-solid fa-circle-user"></i><span>John Doe</span></h4>
+                    </div>
                 </div>
 
                
@@ -144,7 +150,7 @@
                         <div class="album">
                             <img src="img/radar.jpeg" alt="radar">
                             <div class="testo">
-                                <h4>Release radar</h4>
+                                <h4>Release Radar</h4>
                             </div>          
                         </div>
 
@@ -182,12 +188,16 @@
 
     <!-- Barra riproduzione audio -->
     <footer>
+
+        <!-- Sinistra -->
         <div class="sinistra">
             <img src="img/sinister.jpeg" alt="">
             <div>
                 <h4>Sinister</h4>
                 Brano Nome
-            </div>          
+            </div> 
+            <div><i class="fa-regular fa-heart"></i></div>
+            <div><i class="fa-regular fa-folder"></i></div>         
         </div>
 
         <!-- Centrale -->
@@ -200,8 +210,13 @@
                 <li><i class="fa-solid fa-rotate-right"></i></li>
             </ul>
 
-            <div class="barra-riprod">
-                <div></div>
+            <!-- Barra di riproduzione -->
+            <div class="cont-ripr">
+                <div>0:25</div>
+                <div class="barra-riprod">
+                    <div></div>
+                </div>              
+                <div>4:35</div>
             </div>       
         </div>
 

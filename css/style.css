@@ -6,6 +6,7 @@
 }
 
 body {
+    font-size: 12px;
     font-family: ‘Montserrat’, sans-serif;
     color: gray;
 }
@@ -65,6 +66,29 @@ h3 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.contenuto-down img {
+    width: 13px;
+}
+
+.contenuto-down hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.contenuto-down span {
+    vertical-align: 5px;
+    margin-left: 5px;
+}
+
+.fa-circle-user {
+    font-size: 25px;
+    color: gray;
+}
+
+.home {
+    border-left: 2px solid green;
 }
 
 /* COLONNA DESTRA */
@@ -163,7 +187,12 @@ footer {
 }
 
 .sinistra{
-    justify-content: flex-start;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.centrale, .destra{
+    color: white;
 }
 
 .destra{
@@ -173,9 +202,10 @@ footer {
 }
 
 .centrale {
+    /* background-color: aqua; */
     justify-content: space-around;
     flex-direction: column;
-    width: 30%;
+    width: 35%;
 }
 
 .destra {
@@ -189,8 +219,16 @@ footer {
     vertical-align: middle;
 }
 
-.barra-riprod {
+.cont-ripr {
+    /* background-color: blueviolet; */
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-riprod {
+    width: 380px;
     height: 5px;
     border-radius: 10px;
     background-color: gray;
@@ -223,6 +261,6 @@ footer {
 }
 
 footer img {
-    width: 50px
+    width: 50px;
 }
 
