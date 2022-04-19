@@ -40,6 +40,7 @@ h3 {
 .colsx, .coldx {
     float: left;
     height: calc(100vh - 70px);
+    
 }
 
 /* COLONNA SINISTRA */
@@ -49,8 +50,16 @@ h3 {
     justify-content: space-between;
     width: 200px;
     padding: 10px;
+    
     /* Debug */
     background-color: black;
+}
+
+@media screen and (max-height: 530px) {
+    .colsx {
+        overflow-y: auto;
+        /* background-color: aqua; */
+    }   
 }
 
 .row li {
@@ -91,11 +100,21 @@ h3 {
     border-left: 2px solid green;
 }
 
+
 /* COLONNA DESTRA */
 .coldx{
     overflow-y: auto;
     width: calc(100% - 200px);
     background-color: rgb(20, 25, 34);
+}
+
+@media screen and (max-width: 530px){
+    .container-album{
+        background-color: aqua;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+      
 }
 
 nav {
@@ -196,6 +215,7 @@ nav ul li:first-child{
 
 /* Footer */
 footer {
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     height: 70px;
