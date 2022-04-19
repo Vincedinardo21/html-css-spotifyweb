@@ -162,14 +162,36 @@ nav ul li:first-child{
 
 .album {
     width: 15%;
+    position: relative;
 }
 
 .album img {
-    width: 100%;
+    width: 100%; 
 }
 
 .testo {
     text-align: center;
+}
+
+.album img:hover {
+    filter: opacity(20%);
+}
+
+.album img:hover + .play-icon{
+    /* filter: opacity(20%); */
+    display: block;
+}
+
+.album .fa-circle-play{
+    font-size: 50px;
+    color: white;
+}
+
+.play-icon {
+    display: none;
+    position: absolute;
+    left: 58px;
+    bottom: 121px;
 }
 
 /* Footer */
@@ -234,6 +256,21 @@ footer {
     background-color: gray;
 }
 
+.pallino {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    display: none; 
+}
+
+.barra-bianca-ripr:hover + .pallino{  
+    display: block;
+    background-color: aqua;
+}
+
 #play {
     font-size: 30px;
 }
@@ -245,18 +282,21 @@ footer {
     background-color: gray;
 }
 
-.barra div, .barra-riprod div{
-    /* width: 30px; */
+.barra div, .barra-bianca-ripr{
     height: 100%;
     border-radius: 10px;
     background-color: white;
+}
+
+.barra-bianca-ripr{
+    position: relative;
 }
 
 .barra div {
     width: 30px;
 }
 
-.barra-riprod div {
+.barra-bianca-ripr {
     width: 90px;
 }
 
